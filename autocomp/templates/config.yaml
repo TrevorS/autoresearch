@@ -1,0 +1,38 @@
+# Competition configuration — filled in during Phase 1 (Research)
+
+competition:
+  name: ""                    # Human-readable name
+  slug: ""                    # Kaggle competition slug (for API calls)
+  url: ""                     # Full Kaggle URL
+  deadline: ""                # YYYY-MM-DD
+  metric: ""                  # e.g., "AUC", "RMSE", "F1"
+  metric_direction: ""        # "maximize" or "minimize"
+  submission_limit_daily: 5
+  submission_limit_final: 2
+
+problem:
+  type: ""                    # classification, regression, ranking, etc.
+  target_column: ""           # name of target column
+  id_column: ""               # name of ID column for submissions
+  special_notes: ""           # time-based split, groups, etc.
+
+data:
+  train_rows: 0
+  test_rows: 0
+  num_features: 0
+  has_text: false
+  has_images: false
+  has_time: false
+  has_groups: false
+
+cv:
+  strategy: ""                # stratified_kfold, group_kfold, time_series, etc.
+  n_folds: 5
+  seed: 42
+
+status:
+  current_phase: "research"   # research, eda, baseline, features, models, ensemble, final
+  best_cv: null
+  best_lb: null
+  total_experiments: 0
+  total_submissions: 0
